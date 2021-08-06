@@ -1,8 +1,8 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+import path from 'path';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import { CleanWebpackPlugin } from 'clean-webpack-plugin';
+import CopyPlugin from 'copy-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 const webpackConfig = {
   entry: './src/index.ts',
@@ -76,4 +76,4 @@ const webpackConfig = {
   }
 }
 
-module.exports = webpackConfig;
+export default webpackConfig;
